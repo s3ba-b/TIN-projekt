@@ -7,13 +7,17 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { TosComponent } from './tos/tos.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { NewProductsComponent } from './new-products/new-products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PrivacyPolicyComponent,
-    TosComponent
+    TosComponent,
+    ComingSoonComponent,
+    NewProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,9 @@ import { TosComponent } from './tos/tos.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'privacy-policy', component: PrivacyPolicyComponent },
-      { path: 'tos', component: TosComponent }
+      { path: 'tos', component: TosComponent },
+      { path: 'coming-soon', component: ComingSoonComponent },
+      { path: 'new-products', component: NewProductsComponent }
     ])
   ],
   providers: [],
