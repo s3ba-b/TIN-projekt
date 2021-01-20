@@ -1,0 +1,17 @@
+<!-- Extra -->
+<div id="extra">
+  <div class="container">
+    <div class="row no-collapse-1">
+      <section class="4u" *ngFor="let category of categories">
+<!--        <a href="#" class="image featured">-->
+<!--          <img [src]="product.imageUrl" alt="">-->
+<!--        </a>-->
+        <div class="box">
+          <h1>{{ category.name }}</h1>
+<!--          <p>{{ product.description }}</p>-->
+          <a [routerLink]="['/category-list', category.name]" class="button">Zobacz</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

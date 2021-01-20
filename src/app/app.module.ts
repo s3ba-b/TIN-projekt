@@ -9,6 +9,8 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { TosComponent } from './tos/tos.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { NewProductsComponent } from './new-products/new-products.component';
+import { CategoryListComponent } from './category-list/category-list.component';
+import { CategoryViewComponent } from './category-view/category-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { NewProductsComponent } from './new-products/new-products.component';
     PrivacyPolicyComponent,
     TosComponent,
     ComingSoonComponent,
-    NewProductsComponent
+    NewProductsComponent,
+    CategoryListComponent,
+    CategoryViewComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +31,9 @@ import { NewProductsComponent } from './new-products/new-products.component';
       { path: 'privacy-policy', component: PrivacyPolicyComponent },
       { path: 'tos', component: TosComponent },
       { path: 'coming-soon', component: ComingSoonComponent },
-      { path: 'new-products', component: NewProductsComponent }
+      { path: 'new-products', component: NewProductsComponent },
+      { path: 'category-list', component: CategoryListComponent },
+      { path: 'category-list/:categoryName', component: CategoryViewComponent },
     ])
   ],
   providers: [],
