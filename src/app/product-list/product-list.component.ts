@@ -4,10 +4,10 @@ import { products } from '../products';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.css']
 })
-export class HomeComponent implements OnInit {
+export class ProductListComponent implements OnInit {
 
   products = products;
 
