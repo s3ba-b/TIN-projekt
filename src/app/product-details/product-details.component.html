@@ -1,0 +1,10 @@
+<div id="page" class="container" *ngIf="product">
+  <section>
+    <header class="major">
+      <h2>{{ product.name }}</h2>
+      <span class="byline">{{ product.description }}</span>
+    </header>
+    <img [src]="product.imageUrl" alt="">
+<!--    <p>{{ product.description }}</p>-->
+  </section>
+</div>

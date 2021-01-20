@@ -17,7 +17,7 @@
         <div class="box">
           <h1>{{ product.name }}</h1>
           <p>{{ product.description }}</p>
-          <a href="#" class="button">Read More</a>
+          <a [routerLink]="['/products', product.name]" class="button">Zobacz</a>
         </div>
       </section>
     </div>

@@ -11,6 +11,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { NewProductsComponent } from './new-products/new-products.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { CategoryViewComponent } from './category-view/category-view.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CategoryViewComponent } from './category-view/category-view.component';
     ComingSoonComponent,
     NewProductsComponent,
     CategoryListComponent,
-    CategoryViewComponent
+    CategoryViewComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { CategoryViewComponent } from './category-view/category-view.component';
       { path: 'new-products', component: NewProductsComponent },
       { path: 'category-list', component: CategoryListComponent },
       { path: 'category-list/:categoryName', component: CategoryViewComponent },
+      { path: 'products/:productName', component: ProductDetailsComponent },
     ])
   ],
   providers: [],
