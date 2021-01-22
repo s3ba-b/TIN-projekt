@@ -10,7 +10,7 @@
 /* Basic */
 
 	body {
-		background: #0f1116;
+		background: #e7e7e7;
 	}
 
 	body, span, input, select, textarea {
@@ -484,7 +484,7 @@
 	.wrapper.style1 {
 		padding-top: 10em;
 		padding-bottom: 2em;
-		background: url(../images/bg.jpg) no-repeat center top;
+		//background: url(../images/bg.jpg) no-repeat center top;
 		background-size: cover;
 		background-attachment: fixed;
 		-webkit-backface-visibility: hidden;
@@ -493,7 +493,7 @@
 
 	.wrapper.style2 {
 		padding: 6em 0;
-		background: #d84780;
+		background: #45414f;
 		color: white;
 	}
 
@@ -504,7 +504,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
-		background: #0F1116;
+		background: #45414f;
 		color: #fff;
 		padding: 1.25em 1.25em 1.25em 1.25em;
 		z-index: 100;
@@ -606,8 +606,8 @@
 /* Copyright */
 
 	#copyright {
-		color: #ddd;
-		color: rgba(255, 255, 255, 0.2) !important;
+		/*color: #ddd;*/
+		/*color: rgba(255, 255, 255, 0.2) !important;*/
 		text-align: center;
 		display: block;
 		padding: 3em 0em;
@@ -615,8 +615,8 @@
 
 		#copyright a {
 			text-decoration: none;
-			color: #ddd;
-			color: rgba(255, 255, 255, 0.4) !important;
+			/*color: #ddd;*/
+			/*color: rgba(255, 255, 255, 0.4) !important;*/
 		}
 
 /* Box */
@@ -625,7 +625,5 @@
 		padding: 3em 2em;
 		background: #FFF;
 		text-align: center;
-		border-radius: 6px 6px 6px 6px;
-    margin-bottom: 10px;
-    height: 400px;
+    margin-bottom: 20px;
 	}

@@ -13,11 +13,11 @@
       <section class="4u" *ngFor="let product of products">
         <div class="box">
           <h1>{{ product.name }}</h1>
-          <a href="#" class="image featured">
+          <a [routerLink]="['/products', product.name]" class="image featured">
             <img [src]="product.imageUrl" alt="">
           </a>
           <!--          <p>{{ product.description }}</p>-->
-          <a href="#" class="button">Read More</a>
+          <!--          <a href="#" class="button">Read More</a>-->
         </div>
       </section>
     </div>

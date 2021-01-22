@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tin-projekt-9986e": {
+      "hosting": {
+        "TIN-projekt": [
+          "tin-projekt-9986e"
+        ]
+      }
+    }
+  }
+}

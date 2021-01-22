@@ -5,11 +5,11 @@
       <section class="4u" *ngFor="let category of categories">
         <div class="box">
           <h1>{{ category.name }}</h1>
-          <a href="#" class="image featured">
+          <a [routerLink]="['/category-list', category.name]" class="image featured">
           <img [src]="category.imageUrl" alt="">
         </a>
 <!--          <p>{{ product.description }}</p>-->
-          <a [routerLink]="['/category-list', category.name]" class="button">Zobacz</a>
+<!--          <a [routerLink]="['/category-list', category.name]" class="button">Zobacz</a>-->
         </div>
       </section>
     </div>
