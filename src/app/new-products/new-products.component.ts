@@ -9,12 +9,13 @@ import { products } from '../products';
 })
 export class NewProductsComponent implements OnInit {
 
-  // Instruction to be corrected
-  products = products.filter(p => (((p.availabilityDate).valueOf()) - ((new Date()).valueOf()) < 0));
+  products;
+  now = new Date();
 
   constructor() { }
 
   ngOnInit(): void {
+    this.products = products.filter(p => p.availabilityDate.getDate() <= this.now.getDate()).sort().slice(0, 6);
   }
 
 }
